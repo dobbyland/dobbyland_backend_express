@@ -6,11 +6,6 @@ const models = require('./database/models');
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.post('/test', (req, res) => {
-  console.log(req.body);
-  res.send('테스트');
-});
-
 app.post('/users/create', (req, res) => {
   models.Users.create({
     email: req.body.email,
