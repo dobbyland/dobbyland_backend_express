@@ -11,15 +11,17 @@
   "test": {
     "username": "root",
     "password": null,
-    "database": "database_test",
-    "host": "127.0.0.1",
+    "database": "dobbyland",
+    "host": "localhost",
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
+    "username": "kayheyaprk",
+    "password": "1234",
+    "database": "dobbyland",
+    "host": "localhost",
+    "port": "3306",
+    "dialect": "mysql",
+    "operatorsAliases": false
   }
 }
