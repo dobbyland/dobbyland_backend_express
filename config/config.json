@@ -9,7 +9,7 @@
     "operatorsAliases": false
   },
   "test": {
-    "username": "root",
+    "username": "roottest",
     "password": null,
     "database": "dobbyland",
     "host": "localhost",
