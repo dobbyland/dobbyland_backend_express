@@ -5,7 +5,7 @@
   "main": "server",
   "scripts": {
     "start": "node server",
-    "dev": "nodemon --watch server",
+    "dev": "nodemon --watch server.js",
     "sync": "node sync"
   },
   "author": "",

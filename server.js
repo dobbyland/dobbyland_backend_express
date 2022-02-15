@@ -6,12 +6,29 @@ const models = require('./database/models');
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.post('/users/create', (req, res) => {
-  models.Users.create({
-    email: req.body.email,
-  }).then((_) => {
-    res.status(200).send();
-  });
+app.get('/test/users/select', (req, res) => {
+  models.users
+    .findOne({
+      attributes: ['id', 'email', 'nickname'],
+      where: { email: 'haha@haha.com' },
+    })
+    .then((result) => {
+      console.log(result);
+      res.json(result);
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+});
+
+app.post('/test/users/create', (req, res) => {
+  models.users
+    .create({
+      email: req.body.email,
+    })
+    .then((_) => {
+      res.status(200).send();
+    });
 });
 
 app.listen(serverPort, () => {

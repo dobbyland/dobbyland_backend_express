@@ -1,6 +1,6 @@
 module.exports = (sequelize, DataTypes) => {
-  const Users = sequelize.define(
-    'Users',
+  const users = sequelize.define(
+    'users',
     {
       id: {
         comment: '키',
@@ -41,11 +41,11 @@ module.exports = (sequelize, DataTypes) => {
     {
       charset: 'utf8',
       collate: 'utf8_general_ci',
-      tableName: 'Users',
+      tableName: 'users',
       timestamps: true, // createAt, updateAt
       paranoid: true, // deleteAt
     },
   );
 
-  return Users;
+  return users;
 };
