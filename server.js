@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+require('dotenv').config();
 const serverPort = process.env.PORT || 5000;
 const models = require('./database/models');
 
@@ -25,6 +26,7 @@ app.post('/test/users/create', (req, res) => {
   models.users
     .create({
       email: req.body.email,
+      nickname: req.body.nickname,
     })
     .then((_) => {
       res.status(200).send();

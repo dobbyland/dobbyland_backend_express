@@ -1,3 +1,4 @@
 /node_modules
+/deploy_root
 .env
 config/config.json
