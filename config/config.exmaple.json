@@ -1,0 +1,27 @@
+{
+  "development": {
+    "username": "exampleusername",
+    "password": "examplepassword",
+    "database": "exampledatabase",
+    "host": "localhost",
+    "port": "3306",
+    "dialect": "mysql",
+    "operatorsAliases": false
+  },
+  "test": {
+    "username": "exampletestusername",
+    "password": null,
+    "database": "exmapletestdatabase",
+    "host": "localhost",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "exampleproductionusername",
+    "password": "exampleproductionpassword",
+    "database": "exampleproductiondatabase",
+    "host": "localhost",
+    "port": "3306",
+    "dialect": "mysql",
+    "operatorsAliases": false
+  }
+}
