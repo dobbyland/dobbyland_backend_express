@@ -5,7 +5,6 @@
 <h3 align="center">프로젝트 목차</h3>
 <h4 align="center"><a href="https://github.com/dobbyland/dobbyland_frontend_react">frontend</a></h4>
 <h4 align="center"> >> BACKEND << </h4>
-<h4 align="center"><a href="https://github.com/dobbyland/dobbyland_database_mysql">database</a></h4>
 
 <br />
 
