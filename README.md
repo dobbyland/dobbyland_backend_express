@@ -12,7 +12,10 @@
 ### 1. 기술스택
 
 ```plaintext
-Node.js, Express, MySQL, Sequelize, GCP
+Server: Node.js, Express
+DBMS: MySQL
+ORM: Sequelize
+Cloud: GCP
 ```
 
 <br />
@@ -29,10 +32,12 @@ Node.js, Express, MySQL, Sequelize, GCP
 
 `npm run sync` : DB를 게시합니다.
 
+`pm2 ls` : pm2에 등록된 리스트를 확인합니다.
+
 <br />
 
 ### 3. SSH 접속
 
- `ssh -i [keyFile] dobbylandofficial@34.64.247.219`
+ `ssh YOUR_UBUNTU_ACCOUNT@dobbyland.com`
 
 <br />
